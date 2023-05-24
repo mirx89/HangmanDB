@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8b9d3b0c-2117-40a8-afc4-510c94d455a9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HangmanDB.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hangman_words_ee.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hangman_words_en.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/01_MainWindow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/02_AddNewWord.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/03_EditRecord.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/04_DeleteRecord.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/05_StartWithNewDatabase.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sqlite-jdbc-3.42.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/MainApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/ButtonListenerAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/ComboBoxItemChanged.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/DatabaseData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/MyTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/PanelBottom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/PanelTop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/View.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2QE9HqakRHzaspCgOp2vDLeAdT9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Mirko.Salus/IdeaProjects/HangmanDB/sqlite-jdbc-3.42.0.0.jar",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="controllers" />
+      <recent name="views" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainApp" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="app.MainApp" />
+      <module name="HangmanDB" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b9d3b0c-2117-40a8-afc4-510c94d455a9" name="Changes" comment="" />
+      <created>1684907789346</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684907789346</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/HangmanDB$MainApp.ic" NAME="MainApp Coverage Results" MODIFIED="1684914580491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
