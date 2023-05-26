@@ -81,10 +81,12 @@ public class View extends JFrame {
             getCnbCategory().addItem(category);
         }
     }
-    public void registerItemStateChanged(ItemListener e) {
-        panelTop.getCnbCategory().addItemListener(e);
-    }
+    public void registerItemStateChanged(ItemListener e) {panelTop.getCnbCategory().addItemListener(e);}
     public void registerButtonAdd(ActionListener al) {
-        panelTop.getBtnAdd().addActionListener(al);
-    }
+        panelTop.getBtnAdd().addActionListener(al);}
+    public void registerButtonEdit (ActionListener al) {
+        panelTop.getBtnEdit().addActionListener(al);}
+    public void registerButtonUpdate (ActionListener al) {
+        panelTop.getBtnUpdate().addActionListener(al);}
+
 }

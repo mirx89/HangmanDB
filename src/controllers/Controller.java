@@ -9,6 +9,9 @@ public class Controller {
         new MyTable(model, view);
         view.registerItemStateChanged(new ComboBoxItemChanged(model, view));
         view.registerButtonAdd(new ButtonListenerAdd(model, view));
+        view.registerButtonEdit(new ButtonListenerEdit(model, view));
+        view.registerButtonUpdate(new ButtonListenerUpdate(model, view));
+
     }
 
 }

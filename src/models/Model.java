@@ -11,12 +11,21 @@ public class Model {
     private String chooseCategory = "Choose a category";
     private DefaultTableModel dtm = new DefaultTableModel();
     private JTable table = new JTable(dtm);
+    private int changeAbleId = 0;
 
     public Model(String databaseFile) {
         if(databaseFile != null) {
             this.databaseFile = databaseFile;
         }
         new Database(this.databaseFile, this); // "this" is model
+    }
+
+    public int getChangeAbleId() {
+        return changeAbleId;
+    }
+
+    public void setChangeAbleId(int changeAbleId) {
+        this.changeAbleId = changeAbleId;
     }
 
     public List<DatabaseData> getDatabaseData() {

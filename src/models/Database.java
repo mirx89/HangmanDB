@@ -24,19 +24,23 @@ public class Database {
     private void checkDatabase() {
         File f = new File(databaseFile);
         if(!f.exists()) { // databasefile not exists
-            createTable();
+            createTable(); // create word table
+            createTableScore(); // create scores table
         } else { // database exists
-            if(!tableExists()) { // of table does not exist
+            if(!tableExists("words")) { // if table words does not exist
                 createTable();
+            }
+            if(!tableExists("scores")) { // if table scores does not exist
+                createTableScore();
             }
         }
     }
 
-    private boolean tableExists() {
+    private boolean tableExists(String databaseTable) {
         try {
             Connection conn = this.dbConnection();
             DatabaseMetaData dmb = conn.getMetaData();
-            ResultSet rs= dmb.getTables(null,null,"words",null);
+            ResultSet rs= dmb.getTables(null,null,databaseTable,null);
             rs.next(); // Move the reading order forward
             return rs.getRow() > 0; // if > 0 table exists, null, or 0 doesn't exist(false)
         } catch (SQLException e) {
@@ -55,6 +59,26 @@ public class Database {
                     "    \"category\"    TEXT NOT NULL,\n" +
                     "    PRIMARY KEY(\"id\" AUTOINCREMENT)\n" +
                     ");";
+            stmt.executeUpdate(sql);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    private void createTableScore() {
+        try {
+            Connection conn = this.dbConnection();
+            Statement stmt = conn.createStatement();
+            String sql = """
+                    "CREATE TABLE \\"scores\\" (\\n" +
+                    "\\"id\\"    INTEGER NOT NULL UNIQUE,\\n" +
+                    "\\"playertime\\"    TEXT NOT NULL,\\n" +
+                    "\\"playername\\"    TEXT NOT NULL,\\n" +
+                    "\\"guessword\\"    TEXT NOT NULL,\\n" +
+                    "\\"wrongcharacters\\"    TEXT,\\n" +
+                    "\\"gametime\\"    INTEGER,\\n" +
+                    "PRIMARY KEY(\\"id\\" AUTOINCREMENT)\\n" +
+                    ");\\n";
+                    """;
             stmt.executeUpdate(sql);
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -126,6 +150,48 @@ public class Database {
             ps.setString(2, categoryName);
             ps.executeUpdate();
             this.select(); // Update data in table
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public void delete(int id) {
+        String sql = "DELETE FROM words WHERE id = ?";
+        try {
+            Connection conn = this.dbConnection();
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1,id);
+            ps.executeUpdate();
+            select();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public List<DatabaseData> selectById(int id) {
+        String sql = "SELECT * FROM words WHERE id = ?";
+        List<DatabaseData> databaseData = new ArrayList<>();
+        try {
+            Connection conn = this.dbConnection();
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, id);
+            ResultSet rs = ps.executeQuery();
+            rs.next();
+            databaseData.add(new DatabaseData(rs.getInt("id"), rs.getString("word"), rs.getString("category")));
+            rs.next();
+            return databaseData;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public void update(int id, String newWord, String newCategoryName) {
+        String sql = "UPDATE words SET word = ?, category = ? WHERE id = ?";
+        try {
+            Connection conn = this.dbConnection();
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setString(1, newWord);
+            ps.setString(2, newCategoryName);
+            ps.setInt(3,id);
+            ps.executeUpdate();
+            select();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
