@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b9d3b0c-2117-40a8-afc4-510c94d455a9" name="Changes" comment="26.05">
-      <change beforePath="$PROJECT_DIR$/src/controllers/ButtonListenerUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ButtonListenerUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/PanelTop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PanelTop.java" afterDir="false" />
-    </list>
+    <list default="true" id="8b9d3b0c-2117-40a8-afc4-510c94d455a9" name="Changes" comment="26.05" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +81,19 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1685093648611</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="26.05">
+      <created>1685094296766</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1685094296766</updated>
+    </task>
+    <task id="LOCAL−00005" summary="26.05">
+      <created>1685094306538</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1685094306538</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
