@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b9d3b0c-2117-40a8-afc4-510c94d455a9" name="Changes" comment="24.05">
-      <change afterPath="$PROJECT_DIR$/src/controllers/ButtonListenerEdit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/ButtonListenerUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman_words_ee.db" beforeDir="false" afterPath="$PROJECT_DIR$/hangman_words_ee.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Database.java" afterDir="false" />
+    <list default="true" id="8b9d3b0c-2117-40a8-afc4-510c94d455a9" name="Changes" comment="26.05">
+      <change beforePath="$PROJECT_DIR$/src/controllers/ButtonListenerUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ButtonListenerUpdate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/MyTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/MyTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/PanelTop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PanelTop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,13 +79,20 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1684942977564</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="26.05">
+      <created>1685093648611</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1685093648611</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="24.05" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.05" />
+    <MESSAGE value="26.05" />
+    <option name="LAST_COMMIT_MESSAGE" value="26.05" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/HangmanDB$MainApp.ic" NAME="MainApp Coverage Results" MODIFIED="1684914580491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

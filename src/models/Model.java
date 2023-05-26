@@ -8,7 +8,7 @@ public class Model {
     private String databaseFile = "hangman_words_ee.db"; // default database file
     private List<DatabaseData> databaseData;
     private String[] cmbNames; // Combo-box names
-    private String chooseCategory = "Choose a category";
+    private final String chooseCategory = "Choose a category";
     private DefaultTableModel dtm = new DefaultTableModel();
     private JTable table = new JTable(dtm);
     private int changeAbleId = 0;

@@ -6,9 +6,9 @@ import javax.swing.*;
 import java.awt.*;
 
 public class PanelTop extends JPanel {
-    private Model model;
-    private JPanel pnlComponents = new JPanel(new GridBagLayout());
-    private GridBagConstraints gbc = new GridBagConstraints();
+    private final Model model;
+    private final JPanel pnlComponents = new JPanel(new GridBagLayout());
+    private final GridBagConstraints gbc = new GridBagConstraints();
     private JLabel lblWordTotal, lblCategoryTotal;
     private JTextField txtWord, txtNewCategory;
     private JButton btnAdd, btnEdit, btnUpdate;

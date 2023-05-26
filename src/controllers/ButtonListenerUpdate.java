@@ -7,10 +7,11 @@ import views.View;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Objects;
 
 public class ButtonListenerUpdate implements ActionListener {
-    private Model model;
-    private View view;
+    private final Model model;
+    private final View view;
     public ButtonListenerUpdate(Model model, View view) {
         this.model = model;
         this.view = view;
@@ -20,7 +21,7 @@ public class ButtonListenerUpdate implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         // System.out.println("Update button works"); // test
         String word = view.getTxtWord().getText();
-        String category = view.getCnbCategory().getSelectedItem().toString();
+        String category = Objects.requireNonNull(view.getCnbCategory().getSelectedItem()).toString();
         String newCategory = view.getTxtNewCategory().getText();
         if (!word.isEmpty() && view.getCnbCategory().getSelectedItem().toString().equals(model.getChooseCategory()) && !newCategory.isEmpty()) {
             // new category
